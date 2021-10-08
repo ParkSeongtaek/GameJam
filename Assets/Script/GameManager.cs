@@ -19,6 +19,11 @@ public class GameManager : MonoBehaviour
         return maxScore;
     }
 
+    //Char state
+    public bool inGame = true;
+    public bool pause = false;
+    public bool gameOver = false;
+
 
 
 
@@ -42,15 +47,5 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("MaxScore", maxScore);
 
     } 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-
-    private void FixedUpdate()
-    {
-        
-    }
 }
