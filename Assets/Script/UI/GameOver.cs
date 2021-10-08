@@ -11,9 +11,21 @@ public class GameOver : MonoBehaviour
         Instance = this;
     }
 
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        Debug.Log("닿았당");  
+        if(col.name=="Enemy")
+        {
+            Gameover();
+        }
+    }
 
 
     //class OBJ{  OnSollisionEnter ( Collision = Char)   // Gameover. -> Gameover  }
+    class Object
+    {
+
+    }
 
     public void Gameover()
     {
