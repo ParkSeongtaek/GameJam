@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+
 public class ForCharacterController : MonoBehaviour
 {
     Vector3 moveVector;

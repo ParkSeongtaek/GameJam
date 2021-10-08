@@ -155,6 +155,7 @@ MonoBehaviour:
   inGame: 1
   pause: 0
   gameOver: 0
+  Stage: 1
 --- !u!4 &147231877
 Transform:
   m_ObjectHideFlags: 0
@@ -621,13 +622,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62f736281abb13849a8701718674b3ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: -9.8
   groundCheck: {fileID: 1099222080}
   groundMask:
     serializedVersion: 2
     m_Bits: 4294967295
   groundDistance: 0.4
   isGrounded: 1
+  jumpHeight: 20
+  yVelocity: 0
+  gravity: -9.8
+  jumpPower: 5
+  ReadyJump: 0
   controller: {fileID: 566576888}
 --- !u!1 &574385136
 GameObject:
@@ -972,6 +977,7 @@ GameObject:
   m_Component:
   - component: {fileID: 806807541}
   - component: {fileID: 806807540}
+  - component: {fileID: 806807542}
   m_Layer: 0
   m_Name: BG
   m_TagString: Untagged
@@ -1044,6 +1050,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &806807542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806807539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd1d7037289f1a499cd2a79f68a9bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BGPref: {fileID: 0}
+  time: 2.5
 --- !u!1 &909291582
 GameObject:
   m_ObjectHideFlags: 0
