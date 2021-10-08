@@ -1062,7 +1062,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cd1d7037289f1a499cd2a79f68a9bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BGPref: {fileID: 0}
+  Prefnum: 3
+  BGPref:
+  - {fileID: 243030441958016606, guid: d6d681ad6d658c8458f33d2a7f64b41c, type: 3}
+  - {fileID: 8050611931656326459, guid: 9895824bdcea5104996a5386d62f4a84, type: 3}
+  - {fileID: 8860901627998479439, guid: ead085278ecff634fbc222a0eb7274eb, type: 3}
   time: 2.5
 --- !u!1 &909291582
 GameObject:
