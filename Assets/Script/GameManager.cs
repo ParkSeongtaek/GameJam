@@ -24,11 +24,14 @@ public class GameManager : MonoBehaviour
     public bool pause = false;
     public bool gameOver = false;
 
-
+    public int Stage = 1;
 
 
     void Start()
     {
+
+
+        Instance = this;
         if (Instance == null)
         {
             Instance = this;
@@ -38,13 +41,13 @@ public class GameManager : MonoBehaviour
         {
             Destroy(Instance);
         }
-        maxScore = PlayerPrefs.GetInt("MaxScore",0);
+        maxScore = PlayerPrefs.GetInt("Stage",1);
 
 
     }
     public void Save()
     {
-        PlayerPrefs.SetInt("MaxScore", maxScore);
+        PlayerPrefs.SetInt("Stage", Stage);
 
     } 
 
